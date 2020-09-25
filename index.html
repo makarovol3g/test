@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Test</title>
+</head>
+<body>
+    <div class="test-layout">
+        <header class="header">
+            <div class="page-logo-wrapper">
+                <img src="./img/logo.svg" alt="" class="page-logo">
+            </div>
+        </header>
+        <div class="layout-content">
+            <div class="page-path">
+                <span class="page-path-dir">Школьникам </span><span class="page-path-file">/ Детские железные дороги России</span>
+            </div>
+            <div class="layout-text-wrapper">
+                <h1 class="page-title">Тестовое задание</h1>
+                <div class="text-wrapper">
+                    <p class="tasks">Задача: сверстать предложенный макет.</p>
+                    <p class="details">Детали:</p>
+                    <ol class="description-list">
+                        <li>На этой странице (1) есть кнопка «подать заявку», которая должна открывать модальное окно </li>
+                        <li>Модальное окно (макет 2) можно закрыть крестиком в правом верхнем углу</li>
+                        <li>У всех интерактивных элементов есть состояние «hover» — постарайтесь реализовать и его</li>
+                        <li>Удачи!</li>
+                    </ol>
+                </div>
+                <div class="tip">
+                    <span class="tip-text">PS, не успевая подключить Open Sans, можно использовать arial или аналог без засечек.</span>
+                </div>
+            </div>
+            <div class="layout-image-wrapper">
+                <div class="rail-image-wrapper">
+                    <img src="./img/img.png" alt="" class="rail-image">
+                    <p class="image-title">г. Тюмень, ул. Первомайская, д. 55, каб. 8</p>
+                </div>
+                <div class="modal-button" id="modal-button">
+                    <p class="modal-button-text">ПОДАТЬ ЗАЯВКУ</p>
+                    <img src="./img/Group 21.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let modalBtn = document.querySelector('#modal-button')
+        modalBtn.addEventListener('click', () => {
+            modalBtn.classList.toggle('blue')
+        })
+    </script>
+</body>
+</html>
